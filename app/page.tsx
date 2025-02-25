@@ -1,4 +1,6 @@
+import FaQs from "./components/FaQs";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Section3 from "./components/Section3";
 import Usefullness from "./components/Usefullness";
@@ -21,7 +23,9 @@ export default function Home() {
     {/* section  6 */}
       <WorkFlow />
     {/* section  7 */}
-
+      <FaQs />
+    {/* Footer */}
+      <Footer />
   </>
   );
 }
