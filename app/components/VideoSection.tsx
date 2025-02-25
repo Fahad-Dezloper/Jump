@@ -1,9 +1,12 @@
 import React from 'react'
 
 const VideoSection = () => {
+    const videoImage = ["/video.svg"]
   return (
     <div className='w-full h-fit flex items-center justify-center py-16'>
-        <img src="/video.svg" alt="" className='w-[80vw] h-full' />
+        {videoImage.map((item, i) => (
+            <img key={i} src={item} alt="Video" className='w-[80vw] h-full' />
+        ))}
     </div>
   )
 }
