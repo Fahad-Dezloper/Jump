@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        primary: "var(--font-rubik)",
+        secondary: "var(--font-inter)"
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
