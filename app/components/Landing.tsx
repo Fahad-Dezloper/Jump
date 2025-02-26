@@ -5,7 +5,7 @@ import FeaturedLogo from './FeaturedLogo'
 
 const Landing = () => {
   return (
-    <div className='w-screen h-screen gradient px-20'>
+    <div className='w-screen h-fit gradient md:px-20 pb-12'>
         <Topbar />
         <FrontPage />
         <FeaturedLogo />
