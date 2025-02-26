@@ -1,14 +1,20 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
 const VideoSection = () => {
-    const videoImage = ["/video.svg"]
   return (
-    <div className='w-full h-fit flex items-center justify-center py-16'>
-        {videoImage.map((item, i) => (
-            <img key={i} src={item} alt="Video" className='w-[80vw] h-full' />
-        ))}
+    <div className="w-full flex items-center justify-center py-16">
+      <div className="relative w-[90%] md:w-[80%] lg:w-[70%]">
+        <Image
+          src="/video.svg"
+          alt="Video Thumbnail"
+          width={1280}
+          height={720}
+          className="w-full h-auto rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default VideoSection
+export default VideoSection;
