@@ -2,7 +2,7 @@ import React from 'react'
 
 const FrontPage = () => {
   return (
-    <div className="flex flex-col md:flex-row md:justify-between w-full text-white font-primary">
+    <div className="flex flex-col md:flex-row md:justify-between md:mt-8 w-full text-white font-primary">
       {/* Left Section */}
       <div className="w-full md:w-[60%] p-8 flex flex-col justify-center">
         <div className="inline-block">

@@ -36,12 +36,12 @@ const FaQs = () => {
         setOpenIndex(openIndex === index ? null : index);
     };
   return (
-    <section className="py-12 px-6 max-w-3xl mx-auto">
+    <section className="py-12 px-6 max-w-3xl mx-auto font-primary">
       {/* Heading */}
-      <h2 className="text-3xl font-bold text-center font-primary">
+      <h2 className="text-3xl font-medium text-center font-primary">
         Have Any Questions?
       </h2>
-      <p className="text-gray-600 text-center mt-2 font-primary">
+      <p className="text-[#707070] text-center mt-2 font-primary">
         Find answers to common queries and get the support you need to make the most of our platform.
       </p>
 
@@ -52,15 +52,15 @@ const FaQs = () => {
             key={index}
             className={`border-2 rounded-xl p-4 cursor-pointer transition-all ${
               openIndex === index
-                ? "border-[#50D669] bg-[#F4F4F4]"
+                ? "border-[#50D669]"
                 : "border-[#50D669]"
             }`}
             onClick={() => toggleFAQ(index)}
           >
             {/* Question */}
             <h3
-              className={`text-lg font-semibold font-primary ${
-                openIndex === index ? "text-[#50D669]" : "text-black"
+              className={`text-lg font-medium font-primary ${
+                openIndex === index ? "text-[#00443B]" : "text-black"
               }`}
             >
               {faq.question}
@@ -68,7 +68,7 @@ const FaQs = () => {
 
             {/* Answer (Only visible if open) */}
             {openIndex === index && (
-              <p className="text-gray-600 mt-2 font-primary">{faq.answer}</p>
+              <p className="text-[#707070] mt-2 font-primary">{faq.answer}</p>
             )}
           </div>
         ))}

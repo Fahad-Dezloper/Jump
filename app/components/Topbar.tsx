@@ -21,7 +21,7 @@ const Topbar = () => {
                 <Link key={i} href={item.link}>{item.name}</Link>
             ))}
         </nav>
-        <div className='w-11 h-full '></div>
+        <div className='w-11 h-full'></div>
     </div>
   )
 }
