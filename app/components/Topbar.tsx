@@ -18,7 +18,7 @@ const Topbar = () => {
   return (
     <div className="flex items-center justify-between px-6 md:py-4  text-white">
       {/* Logo */}
-      <Image src="/LOGO.svg" alt="Logo" width={160} height={40} priority />
+      <Image src="/LOGO.png" alt="Logo" width={160} height={40} priority />
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-10 font-primary">
