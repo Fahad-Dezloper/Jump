@@ -1,9 +1,38 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const FrontPage = () => {
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbw_7-cxESoTO7IbBH0s3U81YuQhBdLGykJ_cq44_fi_z81Dff0LXq0zHpMftch9wxBGrw/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `fullName=${encodeURIComponent(fullName)}&email=${encodeURIComponent(email)}`,
+      });
+  
+      if (response.ok) {
+        setMessage('Thank you for joining the waitlist!');
+        setFullName('');
+        setEmail('');
+      } else {
+        setMessage('An error occurred. Please try again.');
+      }
+    } catch (error) {
+      setMessage('An error occurred. Please try again.');
+    }
+  };
+  
   return (
     <div className="flex flex-col md:flex-row items-center justify-between w-full text-white font-primary px-6 md:px-12 py-12">
       {/* Left Section */}
@@ -50,15 +79,21 @@ const FrontPage = () => {
             Join our extensive waitlist today to spark connection and get notified when we launch!
           </p>
 
-          <form className="flex flex-col gap-4 mt-6">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-6">
             <input
               type="text"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              required
               placeholder="Your full name"
               className="w-full p-3 rounded-md bg-[#F4F4F4] border focus:ring-2 focus:ring-[#038B49] outline-none transition"
             />
 
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
               placeholder="Your working email"
               className="w-full p-3 rounded-md bg-[#F4F4F4] border focus:ring-2 focus:ring-[#038B49] outline-none transition"
             />
@@ -70,6 +105,7 @@ const FrontPage = () => {
               <span>Join the waitlist</span>
             </button>
           </form>
+          {message && <p>{message}</p>}
         </div>
       </motion.div>
     </div>
