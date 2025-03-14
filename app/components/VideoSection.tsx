@@ -6,7 +6,7 @@ const VideoSection = () => {
     <div className="w-full flex items-center justify-center py-16">
       <div className="relative w-[90%] md:w-[80%] lg:w-[70%]">
         <Image
-          src="/video.svg"
+          src="https://ucarecdn.com/52db0821-c9d0-4590-842b-87bcd983d24a/Video.svg"
           alt="Video Thumbnail"
           width={1280}
           height={720}

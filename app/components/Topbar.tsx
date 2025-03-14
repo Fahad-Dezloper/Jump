@@ -10,15 +10,15 @@ const Topbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const nav = [
-    { name: "Features", link: "/features" },
-    { name: "Resources", link: "/resources" },
-    { name: "Contact us", link: "/contact" },
+    { name: "Features", link: "/" },
+    { name: "Resources", link: "/" },
+    { name: "Contact us", link: "/" },
   ];
 
   return (
     <div className="flex items-center justify-between px-6 md:py-4  text-white">
       {/* Logo */}
-      <Image src="/LOGO.png" alt="Logo" width={160} height={40} priority />
+      <Image src="/LOGO.png" alt="Logo" width={160} height={40} priority className="invert" />
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-10 font-primary">
