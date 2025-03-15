@@ -4,13 +4,13 @@ import React, { useState } from 'react'
 const FaQs = () => {
     const faqs = [
         {
-          question: "How do I join Design Jump as a designer?",
+          question: "How do I join Desizn Bank as a designer?",
           answer:
             "Sign up for early access, upload your portfolio, and get verified. Once the platform launches, you'll be ready to showcase and sell your designs instantly.",
         },
         {
           question: "Are there fees for selling my designs?",
-          answer: "No, Design Jump does not charge listing fees. However, a small commission is deducted upon successful sales.",
+          answer: "No, Desizn Bank does not charge listing fees. However, a small commission is deducted upon successful sales.",
         },
         {
           question: "How are payments secured?",
