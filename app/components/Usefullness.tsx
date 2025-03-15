@@ -7,21 +7,21 @@ const Usefullness = () => {
       value: "60%",
       title: "Lower costs",
       description:
-        "Design Jump saves architects marketing costs and buyers up to 90% on designs. No middlemen, low fees, secure payments, and AI matching make premium architecture affordable for all.",
+        "Desizn Bank saves architects marketing costs and buyers up to 90% on designs. No middlemen, low fees, secure payments, and AI matching make premium architecture affordable for all.",
     },
     {
       id: 2,
       value: "2.5X",
       title: "Faster delivery",
       description:
-        "Design Jump can deliver customizable design faster than the traditional design delivery system.",
+        "Desizn Bank can deliver customizable design faster than the traditional design delivery system.",
     },
     {
       id: 3,
       value: "5X",
       title: "Modern approach",
       description:
-        "Design Jump redefines architecture with a modern, digital-first marketplace—connecting global talent, cutting costs, and delivering innovative designs seamlessly. Where creativity meets efficiency.",
+        "Desizn Bank redefines architecture with a modern, digital-first marketplace—connecting global talent, cutting costs, and delivering innovative designs seamlessly. Where creativity meets efficiency.",
     },
   ];
 
@@ -29,7 +29,7 @@ const Usefullness = () => {
     <div className="font-primary flex flex-col items-center gap-16 px-4 md:px-6">
       {/* Heading */}
       <h2 className="text-[40px] sm:text-[50px] md:text-[57px] font-medium leading-tight text-center">
-        Design Jump{" "}
+      Desizn Bank{" "}
         <span className="text-[#50D669]">
           Where Vision Meets <br /> Opportunity.
         </span>

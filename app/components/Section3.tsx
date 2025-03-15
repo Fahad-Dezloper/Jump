@@ -18,7 +18,7 @@ const Section3 = () => {
           transition={{ duration: 0.5 }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-[60px] text-[#707070] blur-sm mt-2"
         >
-          Use Design Jump
+          Use Desizn Bank
         </motion.h2>
       </div>
     </div>
